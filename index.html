@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Video Site</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+
+  /* Header */
+  .header {
+    background: #111;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4a247;
+  }
+
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d4a247;
+    text-transform: uppercase;
+  }
+
+  .menu a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+  .menu a:hover {
+    opacity: 1;
+  }
+
+  /* Banner */
+  .banner {
+    height: 380px;
+    /* Ganti 'your-banner.jpg' dengan gambar kamu sendiri */
+    background: url('https://cdn.aceimg.com/0160be0fb.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+
+  .banner h1 {
+    font-size: 42px;
+    max-width: 500px;
+    color: #ffd76b; /* Optional: ubah warna teks */
+    text-shadow: 0 0 10px rgba(0,0,0,0.7); /* biar teks jelas */
+  }
+
+  /* Section title */
+  .section-title {
+    margin: 30px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4a247;
+  }
+
+  /* Video Grid */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 40px 40px;
+  }
+
+  /* Video card (as link) */
+  .video-card {
+    display: block;
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #222;
+    transition: 0.3s;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+  }
+
+  .video-card:hover {
+    transform: scale(1.03);
+    border-color: #d4a247;
+  }
+/* Thumbnail vertical / portrait */
+.video-thumb {
+    width: 100%;
+    padding-top: 177.78%; /* 9:16 ratio (16/9 ≈ 1.7778 => 177.78%) */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* PLAY icon */
+.video-thumb::after {
+    content: "▶";
+    font-size: 45px; /* lebih besar supaya terlihat di thumbnail tinggi */
+    color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+    transition: 0.3s;
+}
+
+.video-card:hover .video-thumb::after {
+    color: #d4a247;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+  /* Video title */
+  .video-title {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .social-icon {
+    display: inline-block;
+    margin-left: 20px;
+    transition: 0.3s;
+  }
+
+  .social-icon img {
+    display: block;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">Lustful Grace</div>
+  
+  <div class="menu">
+    <!-- Tombol Facebook -->
+    <a href="https://www.facebook.com/LustfulGrace" target="_blank" class="social-icon">
+      <img src="https://cdn.aceimg.com/96d76769f.png" alt="Facebook" width="28" height="28">
+    </a>
+  </div>
+  
+</div>
+
+<!-- BANNER -->
+<div class="banner">
+  <h1>Lustful Grace by FanityX HUB</h1>
+</div>
+
+<!-- VIDEOS -->
+<div class="section-title">Trending Videos</div>
+
+<div class="video-grid">
+
+  <a href="https://lustfulgracex.github.io/fanityx.github.io/" class="video-card">
+    <div class="video-thumb" style="background-image: url('https://cdn.aceimg.com/efc3a5eea.jpg');"></div>
+    <div class="video-title">Auntie said this alone could have you folded… stay woke, bestie 😭🔥</div>
+  </a>
+
+  <a href="https://example.com/video2" class="video-card">
+    <div class="video-thumb" style="background-image: url('thumb2.jpg');"></div>
+    <div class="video-title">Sample Video Title 2</div>
+  </a>
+
+  <a href="https://example.com/video3" class="video-card">
+    <div class="video-thumb" style="background-image: url('thumb3.jpg');"></div>
+    <div class="video-title">Sample Video Title 3</div>
+  </a>
+
+  <a href="https://example.com/video4" class="video-card">
+    <div class="video-thumb" style="background-image: url('thumb4.jpg');"></div>
+    <div class="video-title">Sample Video Title 4</div>
+  </a>
+
+</div>
+
+</body>
+</html>
