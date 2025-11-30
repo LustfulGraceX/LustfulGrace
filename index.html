@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Premium Video Site</title>
+<title>Lustful Grace Home</title>
 
 <style>
   body {
@@ -45,7 +45,6 @@
   /* Banner */
   .banner {
     height: 380px;
-    /* Ganti 'your-banner.jpg' dengan gambar kamu sendiri */
     background: url('https://cdn.aceimg.com/0160be0fb.png') center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -55,8 +54,8 @@
   .banner h1 {
     font-size: 42px;
     max-width: 500px;
-    color: #ffd76b; /* Optional: ubah warna teks */
-    text-shadow: 0 0 10px rgba(0,0,0,0.7); /* biar teks jelas */
+    color: #ffd76b;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
   }
 
   /* Section title */
@@ -67,7 +66,7 @@
     color: #d4a247;
   }
 
-  /* Video Grid */
+  /* Video Grid (default desktop/tablet) */
   .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -75,7 +74,14 @@
     padding: 0 40px 40px;
   }
 
-  /* Video card (as link) */
+  /* HP (<= 600px) → 2 kolom */
+  @media (max-width: 600px) {
+    .video-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Video card */
   .video-card {
     display: block;
     background: #111;
@@ -92,20 +98,21 @@
     transform: scale(1.03);
     border-color: #d4a247;
   }
-/* Thumbnail vertical / portrait */
-.video-thumb {
+
+  /* Thumbnail 9:16 */
+  .video-thumb {
     width: 100%;
-    padding-top: 177.78%; /* 9:16 ratio (16/9 ≈ 1.7778 => 177.78%) */
+    padding-top: 177.78%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-}
+  }
 
-/* PLAY icon */
-.video-thumb::after {
+  /* Play Icon */
+  .video-thumb::after {
     content: "▶";
-    font-size: 45px; /* lebih besar supaya terlihat di thumbnail tinggi */
+    font-size: 45px;
     color: rgba(255, 255, 255, 0.85);
     position: absolute;
     top: 50%;
@@ -113,12 +120,12 @@
     transform: translate(-50%, -50%);
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
     transition: 0.3s;
-}
+  }
 
-.video-card:hover .video-thumb::after {
+  .video-card:hover .video-thumb::after {
     color: #d4a247;
     transform: translate(-50%, -50%) scale(1.2);
-}
+  }
 
   /* Video title */
   .video-title {
@@ -126,6 +133,7 @@
     font-size: 16px;
     font-weight: bold;
   }
+
   .menu {
     display: flex;
     align-items: center;
@@ -153,18 +161,31 @@
   <div class="logo">Lustful Grace</div>
   
   <div class="menu">
-    <!-- Tombol Facebook -->
     <a href="https://www.facebook.com/LustfulGrace" target="_blank" class="social-icon">
       <img src="https://cdn.aceimg.com/96d76769f.png" alt="Facebook" width="28" height="28">
     </a>
   </div>
-  
 </div>
+
 
 <!-- BANNER -->
 <div class="banner">
   <h1>Lustful Grace by FanityX HUB</h1>
 </div>
+<!-- Banner Iklan-->
+<center style="margin-top: 15px;">
+  <script type="text/javascript">
+    atOptions = {
+		            'key' : 'a39db8e2ff64c9c1ba5643baa6277b07',
+		            'format' : 'iframe',
+		            'height' : 50,
+		            'width' : 320,
+	            	'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//alightmiraculous.com/a39db8e2ff64c9c1ba5643baa6277b07/invoke.js"></script>
+</center>
+<!-- Banner Iklan END-->
 
 <!-- VIDEOS -->
 <div class="section-title">Trending Videos</div>
@@ -190,8 +211,42 @@
     <div class="video-thumb" style="background-image: url('thumb4.jpg');"></div>
     <div class="video-title">Sample Video Title 4</div>
   </a>
+  
+  <a href="https://example.com/video5" class="video-card">
+    <div class="video-thumb" style="background-image: url('thumb5.jpg');"></div>
+    <div class="video-title">Sample Video Title 5</div>
+  </a>
+
+  <a href="https://example.com/video6" class="video-card">
+    <div class="video-thumb" style="background-image: url('thumb6.jpg');"></div>
+    <div class="video-title">Sample Video Title 6</div>
+  </a>
+
+  <a href="https://example.com/video7" class="video-card">
+    <div class="video-thumb" style="background-image: url('thumb7.jpg');"></div>
+    <div class="video-title">Sample Video Title 7</div>
+  </a>
 
 </div>
 
+<!-- Histats -->
+<script type="text/javascript">
+var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4991623,4,0,0,0,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();
+</script>
+<noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4991623&amp;101" alt="web page hit counter" border="0" /></a></noscript>
+
 </body>
+<!-- Banner Iklan Bawah -->
+<script async="async" data-cfasync="false" src="//alightmiraculous.com/af07efbc01e8e2d85334e845d049a3fb/invoke.js"></script>
+<div id="container-af07efbc01e8e2d85334e845d049a3fb"></div>
+<!-- Banner Iklan Bawah END -->
+
 </html>
